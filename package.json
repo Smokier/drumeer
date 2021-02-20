@@ -1,0 +1,25 @@
+{
+  "name": "drumeer",
+  "version": "1.0.0",
+  "description": "drumeerlol",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "prettier": "prettier \"src/**/*.{jsx,js,html}\" --write",
+    "lint": "eslint \"src/**/*.{js,jsx}\"--quiet",
+    "dev": "parcel src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "@reach/router": "^1.3.4",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}
