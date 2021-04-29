@@ -1,9 +1,13 @@
 import React from "react";
-const Sound = ({word}) => {
-    let audio = new Audio("https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3")
+import {Howl, Howler} from 'howler';
+const Sound = ({word, sn}) => {
+    var sound = new Howl({
+        src: [sn]
+      });
 
     const start = () => {
-      audio.play()
+        sound.play();
+
     }
 return(
     <div id="item">

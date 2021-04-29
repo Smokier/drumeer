@@ -1,8 +1,31 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
 #root{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 90vh;
     width: 90vw;
+}
+li{
+  list-style: none;
+  border-color: rgb(170, 170, 170);
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  padding: .5em;
+  background-color: aliceblue;
+}
+li:hover{
+  background-color: rgb(152, 217, 236);
+  border-color: rgb(77, 156, 221);
+  color: rgb(0, 0, 0);
+
+}
+#menuwrap{
+  border-radius: 5px;
+
 }
 #drumachine{
     display: grid;
@@ -13,7 +36,7 @@
 }
 
 #waba{
-  background-color: #4CAF50; /* Green */
+  background-image:radial-gradient(rgb(243, 149, 207), rgb(250, 2, 155));
   width: 100%;
   height: 100%;
   color: white;
