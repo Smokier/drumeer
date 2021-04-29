@@ -5,15 +5,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-    width: 90vw;
+    height: 95vh;
+    width: 95vw;
+}
+ul{
+  border-color: rgb(170, 170, 170);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 10px;
+  padding: 0;
 }
 li{
   list-style: none;
-  border-color: rgb(170, 170, 170);
-  border-style: solid;
-  border-width: thin;
-  border-radius: 5px;
   padding: .5em;
   background-color: aliceblue;
 }
@@ -73,3 +76,5 @@ button:active {
       background: radial-gradient(circle at center, #f88 99%, #fff 100%, #fff 100%);
     }
   }
+
+  
