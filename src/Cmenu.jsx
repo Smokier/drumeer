@@ -5,11 +5,13 @@ const useContextMenu = ()=>{
   const [xPos, setXPos] = useState("0px");
   const [yPos, setYPos] = useState("0px");
   const [showMenu, setShowMenu] = useState(false);
+  const [selectedId, setSelectedId] = useState("");
   
   const handleContextMenu = useCallback(
     (e) => {
       e.preventDefault();
-  
+      console.log(e.target.id);
+      setSelectedId(e.target.id);
       setXPos(`${e.pageX}px`);
       setYPos(`${e.pageY}px`);
       setShowMenu(true);
@@ -29,12 +31,14 @@ const useContextMenu = ()=>{
       };
     });
   
-    return { xPos, yPos, showMenu };
+    return { xPos, yPos, showMenu, selectedId };
   };
 
+  
 
-const ContextMenu = ({ menu }) => {
-    const { xPos, yPos, showMenu } = useContextMenu();
+const ContextMenu = () => {
+    const { xPos, yPos, showMenu, selectedId } = useContextMenu();
+    
     return (
       <Motion
         defaultStyle={{ opacity: 0 }}
@@ -52,7 +56,13 @@ const ContextMenu = ({ menu }) => {
                   opacity: interpolatedStyle.opacity,
                 }}
               >
-                {menu}
+                <div id="menuwrap">
+  <ul className="menu">
+    <li>Change sound</li>
+    <li>Delete sound</li>
+    <li>Properties</li>
+  </ul>
+  </div>
               </div>
             ) : (
               <></>

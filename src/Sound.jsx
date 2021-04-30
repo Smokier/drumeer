@@ -9,10 +9,18 @@ const Sound = ({word, sn}) => {
         sound.play();
 
     }
+    const [showPad, setShowPad] = React.useState(true)
+    const onClick = (e) => {
+        setShowPad(false)
+        var id = e.target.id;
+    };
 return(
     <div id="item">
-        <button id="waba" onClick={start}>{word}
+        <input id="search" type="submit" value="Search" onClick={onClick} />
+            { showPad ? 
+        <button class="waba" id={word} onClick={start}>{word}
         </button>
+        : null }
     </div>
 );
 };

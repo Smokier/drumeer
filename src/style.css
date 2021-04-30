@@ -44,7 +44,7 @@ li:active{
     grid-template-rows: 33% 33% 33%;
 }
 
-#waba{
+.waba{
   background-image:radial-gradient(rgb(243, 149, 207), rgb(250, 2, 155));
   width: 100%;
   height: 100%;
