@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { render } from "react-dom";
 import Sound from "./Sound";
 import ContextMenu from "./Cmenu";
+import Pad from "./soundsquare"
 const CustomMenu = () => (
   <div id="menuwrap">
   <ul className="menu">
     <li>Change sound</li>
-    <li>Delete sound</li>
+    <li><Pad></Pad></li>
     <li>Properties</li>
   </ul>
   </div>
@@ -24,7 +25,8 @@ const App = () => {
           <Sound sn="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3" word="cowbell"></Sound>
           <Sound sn="https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3" word="chord1"></Sound>
           <Sound sn="https://s3.amazonaws.com/freecodecamp/drums/Chord_3.mp3" word="chord2"></Sound>
-          <Sound sn="https://s3.amazonaws.com/freecodecamp/drums/Chord_2.mp3" word="chord3"></Sound>
+          <Pad></Pad>
+          {/*<Sound id="chord" sn="https://s3.amazonaws.com/freecodecamp/drums/Chord_2.mp3" word="chord3"></Sound>*/}
           </div>
           <ContextMenu menu={<CustomMenu/>}>hola
           </ContextMenu>

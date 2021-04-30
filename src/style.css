@@ -26,6 +26,12 @@ li:hover{
   color: rgb(0, 0, 0);
 
 }
+li:active{
+  background-color: rgb(108, 205, 235);
+  border-color: rgb(77, 156, 221);
+  color: rgb(0, 0, 0);
+
+}
 #menuwrap{
   border-radius: 5px;
 
