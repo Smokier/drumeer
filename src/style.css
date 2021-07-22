@@ -1,9 +1,10 @@
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 246, 246);
 }
 #root{
+    margin-left: 5%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 95vh;
     width: 95vw;
@@ -38,25 +39,35 @@ li:active{
 }
 #drumachine{
     display: grid;
-    height: 80vh;
-    width: 80vh;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
+    grid-gap: 2%;
+    justify-content: center;
+    align-content: center;
+    background-color: #2C2C2E;
+    border-radius: 10px;
+    height: 75vh;
+    width: 75vh;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
 }
 
 .waba{
-  background-image:radial-gradient(rgb(243, 149, 207), rgb(250, 2, 155));
+  border-radius: 5%;
   width: 100%;
   height: 100%;
-  color: white;
-  padding: 15px 32px;
+  color: rgb(41, 40, 40);
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
-  box-shadow: 0 6px 6px #06f;
-  outline: none;
+  border-style: none;
 }
+.waba.un{background: radial-gradient(80.63% 80.63% at 50% 50%, #FC9C9C 0%, rgba(196, 196, 196, 0) 100%, rgba(255, 0, 0, 0) 100%), #FF0000;}
+.waba.do{background: radial-gradient(80.63% 80.63% at 50% 50%, #9CB7FC 0%, rgba(196, 196, 196, 0) 100%, rgba(255, 0, 0, 0) 100%), #0038FF;}
+.waba.tr{background: radial-gradient(80.63% 80.63% at 50% 50%, #FAFC9C 0%, rgba(196, 196, 196, 0) 100%, rgba(255, 0, 0, 0) 100%), #FFE600;}
+.waba.cu{background: radial-gradient(80.63% 80.63% at 50% 50%, #F49CFC 0%, rgba(196, 196, 196, 0) 100%, rgba(255, 0, 0, 0) 100%), #EB00FF;}
+.waba.ci{background: radial-gradient(80.63% 80.63% at 50% 50%, #9CFCFC 0%, rgba(196, 196, 196, 0) 100%, rgba(255, 0, 0, 0) 100%), #00F0FF;}
+.waba.se{background: radial-gradient(80.63% 80.63% at 50% 50%, #FCD09C 0%, rgba(196, 196, 196, 0) 100%, rgba(255, 0, 0, 0) 100%), #FF9900;}
+.waba.si{background: radial-gradient(80.63% 80.63% at 50% 50%, #C69CFC 0%, rgba(196, 196, 196, 0) 100%, rgba(255, 0, 0, 0) 100%), #8F00FF;}
+.waba.oc{background: radial-gradient(80.63% 80.63% at 50% 50%, #9CE5FC 0%, rgba(196, 196, 196, 0) 100%, rgba(255, 0, 0, 0) 100%), #00B2FF;}
+.waba.nu{background: radial-gradient(80.63% 80.63% at 50% 50%, #A4FC9C 0%, rgba(196, 196, 196, 0) 100%, rgba(255, 0, 0, 0) 100%), #14FF00;}
 button:active {
     /* set time duration to your needs */
     animation: gradient 100ms;

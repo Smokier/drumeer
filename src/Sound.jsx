@@ -1,6 +1,6 @@
 import React from "react";
 import {Howl, Howler} from 'howler';
-const Sound = ({word, sn}) => {
+const Sound = ({className, word, sn}) => {
     var sound = new Howl({
         src: [sn]
       });
@@ -16,11 +16,8 @@ const Sound = ({word, sn}) => {
     };
 return(
     <div id="item">
-        <input id="search" type="submit" value="Search" onClick={onClick} />
-            { showPad ? 
-        <button class="waba" id={word} onClick={start}>{word}
+        <button className={`waba ${className}`} id={word} onClick={start}>{word}
         </button>
-        : null }
     </div>
 );
 };
